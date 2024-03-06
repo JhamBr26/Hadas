@@ -1,5 +1,5 @@
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mulish';
 }
 
 /*   HEADER    */
@@ -8,7 +8,7 @@ header{
     padding: 20px 0;
 }
 
-.caja{
+.container{
     width: 1250px; 
     height: 90px;
     position: relative;   
@@ -32,10 +32,17 @@ nav a{
     text-decoration: none;
 }
 
+.iniciar-sesion{
+    background-color: #7D55C7;
+    width: 160px; 
+    height: 45px;
+}
+
 /*   BANNER    */
 
-.caja-banner{
+.banner-container{
     background-color: #AE95DC;
+    color: white;
     text-align: center;
 }
 
@@ -74,6 +81,7 @@ nav a{
 }
 
 
+
 .servicio{
     background-color: #ffffff; 
 }
@@ -103,9 +111,79 @@ nav a{
 }
 
 
+.img-descuento{
+    width: 100%;
+}
+
+.aliados{
+    background-color: #E5DDF3;
+    text-align: center;
+
+}
+
+.img-aliados{
+    width: 1250px; 
+    display: inline-block;    
+
+}
+
+.comentarios{
+    height: 300px;
+    text-align: center;
+}
+
+.comentarios h2{
+    font-size: 40px;
+    font-family: 'Sansita';
+    color: #64449F;
+    font-weight: bold;
+}
+
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .carousel {
+    animation: slide 20s infinite;
+  }
+  
+
+
+
 /*   FOOTER    */
 
 footer{
     background-color: #F6D891;
     height: 300px;
+}
+
+.derechos{
+    background-color: #31214F;
+    height: 50px;
+}
+
+.derechos p{
+    color: white;
 }
