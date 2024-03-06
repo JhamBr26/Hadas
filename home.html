@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
     <header>
         <div class="caja">
@@ -17,98 +19,84 @@
                     <li><a href="productos.html">Servicios</a></li>
                     <li><a href="contacto.html">Quiero ser un Hada</a></li>
                 </ul>
-                
+
             </nav>
         </div>
     </header>
 
-    <div class="caja-banner">        
-        <img class="banner" src="imagenes/banner3.svg" alt="imagen">
-    </div>
+    <section class="head">
+        <h1>Mi cuenta</h1>
+        <p>Tu información</p>
+    </section>
 
     <main>
-        <section class="valor" >
-            <ul class="valores">
-                <li>                    
-                    <img src="imagenes/facil.svg" alt="">  
-                    <h2>Fácil</h2>
-                    <p class="producto-descripcion">Conecta con una hadita en solo unos clicks.</p>            
-                </li>
-                <li>
-                    <img src="imagenes/confiable.svg" alt="">
-                    <h2>Confiable</h2>
-                    <p class="producto-descripcion">Las trabajadoras independientes pasan por una estricta evaluación.</p>   
-                </li>
-                <li>
-                    <img src="imagenes/experto.svg" alt="">
-                    <h2>Experto</h2>
-                    <p class="producto-descripcion">+ 30,000 servicios realizados a través de la plataforma Hadas.</p>         
-                </li>
-                <li>
-                    <img src="imagenes/seguro.svg" alt="">
-                    <h2>Seguro</h2>
-                    <p class="producto-descripcion">Tus servicios de limpieza están asegurados con RIMAC.</p>           
-                </li>
-            </ul>
-           
-        </section >
-
-        <section class="servicio">
-            <ul class="servicios">                     
-                    <li>        
-                        <div>                            
-                            <img src="imagenes/servicioA.svg" alt="">  
+        <div class="container">
+            <section class="left">
+                <img src="" alt="">
+                <h2>Tu nombre</h2>
+            </section>
+            <section class="right">
+                <h2>Datos personales</h2>
+                <form action="home.html" method="post">
+                    <div class="campo">
+                        <label for="nombre">Nombres:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe aquí" required>
+                    </div>
+                    <div class="campo">
+                        <label for="apellido">Apellidos:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Escribe aquí" required>
+                    </div>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="documento">Tipo de documento:</label>
+                            <input type="text" id="documento" name="documento" placeholder="Seleccione" required>
                         </div>
-                        <div>                            
-                            <img src="imagenes/facil.svg" alt="">  
-                            <h2>Fácil</h2>
-                            <p class="producto-descripcion">Conecta con una hadita en solo unos clicks.</p> 
-                        </div>           
-                    </li>   
-                    <li>        
-                        <div>                            
-                            <img src="imagenes/servicioA.svg" alt="">  
+                        <div class="campo">
+                            <label for="numeroDoc">Nro. documento:</label>
+                            <input type="text" id="numeroDoc" name="numeroDoc" placeholder="Nro. documento" required>
                         </div>
-                        <div>                            
-                            <img src="imagenes/facil.svg" alt="">  
-                            <h2>Fácil</h2>
-                            <p class="producto-descripcion">Conecta con una hadita en solo unos clicks.</p> 
-                        </div>           
-                    </li>   
-                    <li>        
-                        <div>                            
-                            <img src="imagenes/servicioA.svg" alt="">  
+                    </div>
+                    <div class="campo">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Correo" required>
+                    </div>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="celular">Celular:</label>
+                            <input type="tel" id="celular" name="celular" placeholder="999999999" required>
                         </div>
-                        <div>                            
-                            <img src="imagenes/facil.svg" alt="">  
-                            <h2>Fácil</h2>
-                            <p class="producto-descripcion">Conecta con una hadita en solo unos clicks.</p> 
-                        </div>           
-                    </li>   
-            </ul>
-
-        </section>
-
-        <section class="descuento">
-
-        </section>
-
-        <section class="aliados">
-
-        </section>
-
-        <section class="comentarios">
-
-        </section>
-
+                        <div class="campo">
+                            <label for="fecNac">Fecha de nacimiento:</label>
+                            <input type="date" id="fecNac" name="fecNac" placeholder="dd/mm/yyyy" required>
+                        </div>
+                    </div>
+                    <div class="campo contrasena">
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </div>
+                    <div class="campo confirmar">
+                        <label for="confirmar">Confirmar contraseña:</label>
+                        <input type="password" id="confirmar" name="confirmar" required>
+                    </div>
+                    <div class="campo aceptar">
+                        <input type="checkbox" id="aceptar" name="aceptar" required>
+                        <label for="aceptar">Acepto los <span>términos y condiciones</span></label>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Registrarse">
+                    </div>
+                </form>
+            </section>
+        </div>
     </main>
-    
-    <footer>
+
+    <!-- <footer>
         <section>
 
         </section>
 
-    </footer>
-    
+    </footer> -->
+
 </body>
+
 </html>
