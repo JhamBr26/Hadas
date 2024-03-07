@@ -1,3 +1,6 @@
+body{
+    font-family:  'Mulish';
+}
 /* FOOTER */
 footer {
     display: flex;

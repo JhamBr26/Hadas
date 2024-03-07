@@ -4,8 +4,6 @@ body{
 
 .servicio-banner{    
     width: 100%;
-    background-image: url(../imagenes/servicio.svg);
-    background-size: cover;
 }
 
 .servicio-banner div{
