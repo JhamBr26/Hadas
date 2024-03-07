@@ -1,0 +1,65 @@
+.unete{
+    width: 100%;
+    height: 500px;
+    background-image: url(../imagenes/unete-banner.svg);
+}
+
+
+
+/*BENEFICIOS*/
+
+.beneficios {   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.beneficios #izquierda{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.beneficios #izquierda h1{
+    color: #64449F;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin : auto;
+    margin-bottom: 0;
+}
+
+.beneficios #izquierda ul{  
+    line-height: 1.8;
+    margin : auto;
+}
+
+.beneficios #derecha {
+    width: 40%;
+    display: flex;
+}
+
+.beneficios #derecha img{
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .beneficios {
+        flex-direction: column; /* Cambia el flujo a vertical en dispositivos móviles */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+    .beneficios #izquierda,
+    .beneficios #derecha {
+        width: 100%; /* Establece el ancho al 100% en dispositivos móviles */
+        text-align: center; /* Centra horizontalmente */
+        
+    }
+
+    .beneficios #derecha img {
+        max-width: 80%; /* Establece un ancho máximo para la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 20px auto ;
+    }
+}

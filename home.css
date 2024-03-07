@@ -69,6 +69,14 @@ body{
     padding: 20px;
 }
 
+.titulo-servicio {
+    width: 100%;
+    font-size: 40px;
+    text-align: center; /* Para centrar el título */
+    color: #64449F;
+    margin-bottom: 20px; /* Espacio entre el título y los servicios */
+}
+
 .servicio{    
     max-width: 500px;
     display: flex;
