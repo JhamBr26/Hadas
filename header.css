@@ -1,0 +1,99 @@
+/* HEADER */
+header {
+    background-color: #F1E6B2;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%; /* Se ajusta al 90% del ancho del viewport */
+    max-width: 1250px; /* Limita el ancho máximo a 1250px */
+    height: auto; /* Se ajusta automáticamente a la altura del contenido */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+nav {
+    flex: 1; /* Toma el espacio restante */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Quita los estilos de la lista */
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+nav li {
+    margin-left: 45px; /* Añade margen entre los elementos */
+}
+
+nav a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none; /* Oculta el ícono del menú en pantallas grandes */
+    cursor: pointer;
+    align-items: center;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #AD96DC;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.iniciar-sesion {
+    background-color: #7D55C7;
+    width: 160px; 
+    height: 45px;
+    border: none; /* Quita el borde */
+    color: white; /* Cambia el color del texto a blanco */
+    font-size: 16px; /* Reduz el tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 25px;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none; /* Oculta la lista de navegación en pantallas pequeñas */
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra verticalmente los elementos */
+    }
+
+    nav li {
+        margin: 10px 0; /* Añade margen verticalmente entre los elementos */
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el ícono del menú en pantallas pequeñas */
+        margin-top: 15px;
+        margin-left: 5px;
+
+    }
+
+    #menu-toggle:checked ~ nav ul {
+        display: flex; /* Muestra la lista de navegación cuando el checkbox está marcado */
+    }
+}

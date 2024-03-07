@@ -2,42 +2,6 @@ body{
     font-family: 'Mulish';
 }
 
-/*   HEADER    */
-header{
-    background-color: #F1E6B2;
-    padding: 20px 0;
-}
-
-.container{
-    width: 1250px; 
-    height: 90px;
-    position: relative;   
-    margin: 0 auto;
-}
-
-nav{
-    position: absolute;
-    top: 35px;    
-    right: 350px;
-}
-
-nav li{
-    display: inline;  
-    margin: 0 0 0 45px;  /*arriba derecha abajo izquierda*/
-}
-
-nav a{
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.iniciar-sesion{
-    background-color: #7D55C7;
-    width: 160px; 
-    height: 45px;
-}
-
 /*   BANNER    */
 
 .banner-container{
@@ -58,31 +22,50 @@ nav a{
 
 
 /*   MAIN    */
-.valores{
-    background-color: #E5DDF3; 
-}
- 
-.valor{ 
-    width: 1250px;
-    margin: 0 auto;
-    padding: 50px;
+
+/* VALORES */
+.valores {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que los elementos se ajusten en filas */
+    justify-content: center; /* Para centrar los elementos horizontalmente */
+    padding: 20px;
+    background-color: #f5f5f5;
 }
 
-.valor li{
-    display: inline-block;
+.valor {
+    width: calc(66% - 20px); /* Calcula el ancho considerando el margen */
+    max-width: 300px; /* Establece un ancho máximo para evitar que los elementos sean demasiado grandes en pantallas grandes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
-    width: 20%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ffffff; 
-    border-radius: 10px;    
+}
+
+.valor img {
+    margin-bottom: 15px;
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+}
+
+.valor h2 {
+    font-size: 20px;
+    color: #64449F;
+    font-weight: bold;
+    margin: 0;
+}
+
+.valor p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
 }
 
 .servicios{
     display: flex;
-    text-align: center;
+    flex-wrap: wrap; /* Para permitir que los elementos se ajusten en filas */
+    justify-content: center; /* Para centrar los elementos horizontalmente */
+    padding: 20px;
 }
 
 .servicio{    
@@ -139,6 +122,16 @@ nav a{
 
 }
 
+@media screen and (max-width: 768px) {
+    .servicios {
+        padding: 10px;
+    }
+
+    .servicio {
+        width: calc(100% - 20px);
+    }
+}
+
 .img-descuento{
     width: 100%;
 }
@@ -150,8 +143,8 @@ nav a{
 }
 
 .img-aliados{
-    width: 1250px; 
-    display: inline-block;    
+    width: 100%;
+    aspect-ratio: 180/31;   
 
 }
 
@@ -174,79 +167,35 @@ nav a{
     overflow: hidden;
   }
   
-  .carousel {
+.carousel {
     display: flex;
-  }
-  
-  .slide {
+}
+
+.slide {
     flex: 0 0 100%;
-  }
-  
-  .slide img {
+}
+
+.slide img {
     width: 100%;
     height: auto;
     display: block;
-  }
-  
-  @keyframes slide {
+}
+
+@keyframes slide {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
-  }
+}
+
+.carousel {
+animation: slide 20s infinite;
+}
   
-  .carousel {
-    animation: slide 20s infinite;
-  }
-  
-
-
-
-/*   FOOTER    */
-
-.contactos{
-    height: 350px;
-    background-color: #F6D891;
-    display: flex;
-    justify-content: space-around;
+.img-redes{
+    width: 100%;
+    aspect-ratio: 144/37;
 }
 
-.contacto{
-    width: 30%;
-    margin: 20px;
-}
 
-.contacto img {
-    width: 100px;
-    height: auto;
-}
 
-.contacto h2{
-    font-size: 26px;
-    font-weight: bold;
-    margin: 10px 0 0 0;
-}
 
-.contacto h3{
-    font-size: 14px;
-    font-weight: bold;
-    margin: 10px 0 10px 0;
-}
-
-.contacto .link{
-    margin: 20px 0;
-}
-
-.contacto a{
-    text-decoration: none;
-}
-
-.derechos{
-    background-color: #31214F;
-    height: 50px;
-    display: flex;
-}
-
-.derechos p{
-    color: white;
-    margin: auto;
-}
 

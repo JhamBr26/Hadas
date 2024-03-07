@@ -1,0 +1,48 @@
+/*   FOOTER    */
+.contactos{
+    height: 350px;
+    background-color: #F6D891;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto{
+    width: 30%;
+    margin: 20px;
+}
+
+.contacto img {
+    width: 100px;
+    height: auto;
+}
+
+.contacto h2{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.contacto h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.contacto .link{
+    margin: 20px 0;
+}
+
+.contacto a{
+    text-decoration: none;
+}
+
+.derechos{
+    background-color: #31214F;
+    height: 50px;
+    display: flex;
+}
+
+.derechos p{
+    color: white;
+    margin: auto;
+}
