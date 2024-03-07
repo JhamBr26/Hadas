@@ -1,0 +1,130 @@
+.banner{
+    width: 100%;
+}
+
+/*Nosotros*/
+
+.nosotros {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66vw; /* Ancho del 66% del viewport */
+    padding: 150px 0 100px 0;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.container, .contenido {
+    width: 50%; /* Cada elemento ocupa el 50% horizontalmente */
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    box-sizing: border-box;
+    padding: 0 150px 0 50px;
+}
+
+.contenido > div {
+    margin-bottom: 20px; /* Espacio entre los elementos apilados */
+}
+
+.contenido h1{
+    margin: 0 0 30px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #64449F;
+}
+
+.contenido p{
+    margin: 0 0 30px 0;
+    font-size: 16px;
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 1600px) {
+    .nosotros {
+        flex-direction: column; /* Cambia el flujo a vertical en dispositivos móviles */
+        align-items: center; /* Centra verticalmente */
+    }
+
+    .container, .contenido {
+        width: 90%; /* Cambia el ancho del contenedor en dispositivos móviles */
+        text-align: center; /* Centra horizontalmente */
+    }
+
+    .contenido {
+        margin-top: 100px;
+        padding: 0 0 0 0; /* Ajusta el relleno */
+    }
+}
+
+@media (max-width: 700px) {
+    img {
+        max-width: 100%; /* Establece el ancho máximo de la imagen al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
+
+.implementos{
+    width: 100%;
+    display: flex;
+}
+
+/*porque*/
+
+.porque {   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.porque #izquierda{
+    width: 60%;
+    padding: 10vw 10vw;;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box
+}
+
+.porque #izquierda h1{
+    color: #64449F;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.porque #izquierda p{    
+    line-height: 1.5;
+
+}
+
+.porque #derecha {
+    width: 40%;
+    display: flex;
+}
+
+.porque #derecha img{
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .porque {
+        flex-direction: column; /* Cambia el flujo a vertical en dispositivos móviles */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+    .porque #izquierda,
+    .porque #derecha {
+        width: 100%; /* Establece el ancho al 100% en dispositivos móviles */
+        text-align: center; /* Centra horizontalmente */
+        
+    }
+
+    .porque #derecha img {
+        max-width: 80%; /* Establece un ancho máximo para la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 20px auto ;
+    }
+}
