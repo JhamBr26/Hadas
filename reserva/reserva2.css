@@ -25,6 +25,7 @@ body {
     padding-bottom: 30px;
 }
 
+/* imagen*/
 .linea {
     width: 80%;
     margin: 0 auto;
@@ -36,6 +37,7 @@ body {
     width: 40%;
 }
 
+/* cuerpo*/
 .cuerpo {
     width: 100%;
     max-width: 1200px;
