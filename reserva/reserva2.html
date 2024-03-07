@@ -44,49 +44,56 @@
         </div>
 
         <section class="linea">
-                <img src="../imagenes/proceso1.svg" alt="">
+                <img src="../imagenes/proceso2.svg" alt="">
         </section>
 
-        <div class="cuerpo">
-                <div class="izquierda">
-                <h2>Indícanos el lugar</h2>    
-                <br>            
-                <form  action="/reserva/reserva2.html">
-                    <div class="campo">
-                        <label for="Dirección">Dirección:</label>
-                        <input type="text" id="Dirección" name="Dirección" placeholder="Escribe aquí" required>
-                    </div>
+        
+        <div class="titulo">
+            <h2>Elige el tipo de servicio</h2>
+        </div>
 
-                    <div class="campo">
-                        <label for="Distrito">Distrito:</label>
-                        <select id="Distrito" name="Distrito" required>
-                            <option value="opcion1">Seleccione una opción</option>
-                            <option value="opcion1">San Martín de Porres</option>
-                            <option value="opcion2">Ate</option>
-                            <option value="opcion3">Surco</option>
-                            <option value="opcion4">Otros</option>
-                        </select>
-                    </div>
-
-                    <div class="campo">
-                        <label for="Referencia">Referencia:</label>
-                        <input type="text" id="Referencia" name="Referencia" placeholder="Escribe aquí" required>
-                    </div>
-
-                    <div class="campo">
-                        <label for="Dirección">Dirección:</label>
-                        <input type="text" id="Dirección" name="Dirección" placeholder="Escribe aquí" required>
-                    </div>
-
-                    <div class="submit">
-                        <input type="submit"  value="SIGUIENTE">
-                    </div>
-                </form>
+        <section class="planes">
+            <div class="plan"> 
+                <h3>Suscripción Ahorra 10%</h3>
+                <ul>
+                    <li>Contratalo cuando quieras</li>
+                    <li>Reserva desde dos veces al mes</li>
+                    <li>Aseguras tu servicio siempre</li>
+                    <li>Pogies in codo servicka</li>
+                </ul>
             </div>
-            <div class="derecha">
-                <img src="../imagenes/mapa_proceso.svg" alt="">    
+
+            <div class="plan">
+                <h3>Suscripción Única</h3>
+                <ul>
+                    <li>Reserva un solo servicio el día que necesites</li>
+                </ul>
             </div>
-        </div>        
+        </section>       
+        
+        <div class="titulo">
+            <h2>Confirma la cantidad de horas</h2>
+        </div>
+
+        <section class="horas">
+            <div class="hour">
+                <p>5 horas</p>
+                <p class="precio">S/ 89.00</p>
+            </div>
+            <div class="hour">
+                <p>6 horas</p>
+                <p class="precio">S/ 99.00</p>
+            </div>
+            <div class="hour">
+                <p>7 horas</p>
+                <p class="precio">S/ 114.00</p>
+            </div>
+        </section>        
+                
+        <div class="submit">
+            <input type="submit" onclick="location.href='/reserva/reserva3.html'" value="SIGUIENTE">
+        </div>
+
     </main>
 
     <footer>

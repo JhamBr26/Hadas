@@ -8,24 +8,23 @@ body {
 }
 
 .servicio-banner div {
-    margin-left: 15%;
+    margin-left: 5%;
     text-align: left;
 }
 
 .servicio-banner h1 {
     font-size: 40px;
     color: #64449F;
-    padding-top: 70px;
+    padding-top: 50px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
 .servicio-banner p {
     font-size: 16px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
-/* imagen*/
 .linea {
     width: 80%;
     margin: 0 auto;
@@ -37,85 +36,94 @@ body {
     width: 40%;
 }
 
-/* cuerpo*/
-.cuerpo {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
+.titulo {
+    font-family: "Sansita";
+    width: 80%;
+    font-size: 26px;
+    text-align: left;
+    color: #64449F;
+    margin-left: 5%;
+    margin-bottom: 20px;
 }
 
-.izquierda {
-    width: 50%;
-    margin: 0 50px 0 50px;
-    padding: 30px;
-    box-sizing: border-box;
-    border: 2px solid #fff;
+/* Expertos */
+.planes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
+    width: 90%;
+    max-width: 300px;
+    flex: 1 1 300px; /* Para evitar que los elementos se desborden */
+    padding: 25px;
+    margin: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 2px solid #7D55C7;
     border-radius: 10px;
 }
 
-.izquierda h2 {
-    font-family: "Sansita";
-    font-size: 26px;
-    color: #64449F;
-    margin-bottom: 10px;
+.plan h3 {
+    font-size: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.plan ul {
+    margin: 10px 0;
 }
 
-.campo {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.plan ul li {
+    list-style-type: disc;
 }
 
-.campo input {
-    padding: 12px;
-    border-radius: 15px;
-    border: none;
-    background-color: #E5DDF3;
-    color: black;
-}
-
-.campo select {
-    padding: 12px;
-    border-radius: 15px;
-    border: none;
-    background-color: #E5DDF3;
-    color: black;
+/* Horas */
+.horas {
     width: 100%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 12px center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.campo select::-ms-expand {
-    display: none;
+.hour {
+    width: 90%;
+    max-width: 200px;
+    flex: 1 1 200px; /* Para evitar que los elementos se desborden */
+    padding: 25px;
+    margin: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #7D55C7;
+    border-radius: 10px;
 }
 
-.campo select:focus {
-    outline: none;
-    border-color: #7D55C7;
+.hour .precio {
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.campo select option {
-    padding: 10px;
-    background-color: white;
-    color: black;
+.hour p {
+    font-size: 16px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: left;
+    color: #64449F;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .submit input {
-    margin-top: 10px;
     padding: 10px;
     width: 220px;
     border: none;
@@ -124,32 +132,46 @@ form {
     background-color: #7D55C7;
 }
 
-.derecha {
-    width: 50%;
-    margin: 25px auto 0 auto;
-    padding: 30px;
-    box-sizing: border-box;
+
+/* Media queries para hacerlo responsive */
+@media screen and (min-width: 768px) {
+    .servicio-banner div {
+        margin-left: 15%;
+    }
+
+    .linea img {
+        width: 40%;
+    }
+
+    .titulo {
+        margin-left: 15%;
+    }
+
+    .plan,
+    .hour {
+        width: calc(50% - 40px);
+        margin: 20px;
+    }
+    
 }
 
-.derecha img {
-    width: 100%;
-    height: auto;
+@media screen and (min-width: 1024px) {
+    .servicio-banner div {
+        margin-left: 20%;
+    }
+
+    .titulo {
+        margin-left: 20%;
+    }
+
+    .plan,
+    .hour {
+        width: calc(33.33% - 40px);
+    }
+    
 }
 
-/* Media queries para hacer el diseño responsive */
 @media only screen and (max-width: 768px) {
-    .cuerpo {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 20px;
-    }
-
-    .izquierda,
-    .derecha {
-        width: 100%;
-        margin: 0;
-    }
-
     .linea img {
         width: 100%;
     }
