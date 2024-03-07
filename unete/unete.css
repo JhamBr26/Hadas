@@ -1,10 +1,188 @@
+/*unete*/
 .unete{
     width: 100%;
-    height: 500px;
     background-image: url(../imagenes/unete-banner.svg);
+    background-size: cover;
+}
+
+.unete h2 {
+    font-size: 22px;
+    text-align: left; /* Para centrar el título */
+    color: #64449F;
+    margin-left: 15%;
+    padding-top: 90px;
+    margin-bottom: 10px; /* Espacio entre el título y los servicios */
+}
+
+.unete p{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 15%;
+
+}
+
+.unete button{
+    margin-left: 15%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 5px 10px;
+    width: 10%;
+    height: 45px;
+    background-color: #7D55C7;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+/*Expertos*/
+.expertos {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que los elementos se ajusten en filas */
+    justify-content: center; /* Para centrar los elementos horizontalmente */
+    padding: 20px;
+}
+
+.experto {
+    width: calc(66% - 20px); /* Calcula el ancho considerando el margen */
+    max-width: 200px; /* Establece un ancho máximo para evitar que los elementos sean demasiado grandes en pantallas grandes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 90px;
+    margin: 30px;
+    text-align: center;
+    background-color: #E5DDF3;
+    border: 2px solid #E5DDF3; 
+    border-radius: 10px;  
+}
+
+.experto img {
+    margin-bottom: 15px;
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
 }
 
 
+.experto p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* ventajas*/
+
+.ventajas {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que los elementos se ajusten en filas */
+    justify-content: center; /* Para centrar los elementos horizontalmente */
+    padding: 20px;
+}
+
+.ventaja {
+    width: calc(66% - 20px); /* Calcula el ancho considerando el margen */
+    max-width: 300px; /* Establece un ancho máximo para evitar que los elementos sean demasiado grandes en pantallas grandes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.ventaja img {
+    margin-bottom: 15px;
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+}
+
+.titulo {
+    width: 100%;
+    font-size: 40px;
+    text-align: left; /* Para centrar el título */
+    color: #64449F;
+    margin-left: 15%;
+    margin-bottom: 20px; /* Espacio entre el título y los servicios */
+}
+
+.ventaja p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/*
+REQUISITOS
+*/
+
+.requisitos {
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que los elementos se ajusten en filas */
+    justify-content: center; /* Para centrar los elementos horizontalmente */
+    padding: 20px;
+    background-color: #E5DDF3;
+}
+
+.requisito {
+    width: calc(66% - 20px); /* Calcula el ancho considerando el margen */
+    max-width: 200px; /* Establece un ancho máximo para evitar que los elementos sean demasiado grandes en pantallas grandes */
+    display: flex;
+    flex-direction: column;
+    padding: 25px 90px;
+    margin: 30px;
+    background-color: white;
+    border: 2px solid white; 
+    border-radius: 10px;  
+}
+
+.requisito h2{
+    color: #64449F;
+    font-weight: bold;
+    font-size: 18x;
+    align-items: left;
+    margin-bottom: 10px;
+}
+
+.requisito .izquierda {    
+    line-height: 1.5;
+}
+
+.requisito li{
+    list-style-type: disc;
+}
+
+.titulo-requisitos {
+    width: 100%;
+    font-size: 40px;
+    text-align: center; /* Para centrar el título */
+    color: #64449F;
+    margin-bottom: 20px; /* Espacio entre el título y los servicios */
+}
+
+.requisito p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.enviar {
+    width: 100%;
+    text-align: center; 
+}
+
+.enviar button{   
+    padding: 5px 10px;
+    width: 10%;
+    height: 45px;
+    background-color: #7D55C7;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
 
 /*BENEFICIOS*/
 
