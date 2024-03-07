@@ -25,6 +25,19 @@ body{
     padding-bottom: 30px;
 }
 
+/*proceso*/
+
+.linea{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.linea img{
+    width: 40%;
+}
+
 
 /* CUERPO */
 .cuerpo {
@@ -33,11 +46,13 @@ body{
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
 
 /* IZQUIERDA */
 .izquierda {
-    width: 70%;
+    width: 50%;
     margin: 0 50px 0 50px;
     padding: 30px;
     box-sizing: border-box;
@@ -45,198 +60,90 @@ body{
     border-radius: 10px;
 }
 
-.izquierda img {
-    width: 100%;
-    height: auto;
-}
-
-.izquierda h1 {
-    font-size: 3rem;
-    font-weight: bold;
+.izquierda h2{
+    font-family: "Sansita";
+    font-size: 26px;
     color: #64449F;
-    margin: 20px auto;
-}
-
-.izquierda h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #64449F;
-    margin: 20px auto;
-}
-
-.izquierda p,
-.izquierda ul {
-    font-size: 1rem;
-    color: #333;
-}
-
-.izquierda li {
-    margin-left: 35px;
-    list-style-type: disc;
-}
-
-/* DERECHA */
-.derecha {
-    width: 30%;
-    margin: 25px auto 0 auto;
-    background-color: #F3CB6C35;
-    padding: 30px;
-    box-sizing: border-box;
-    border: 2px solid #fff;
-    border-radius: 10px;
-}
-
-.derecha h3 {
-    color: #64449F;
-    font-size: 1.3125rem;
-    font-weight: 700;
-    text-align: left;
     margin-bottom: 10px;
 }
 
-.derecha .precio {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.derecha button {
-    width: 100%;
-    height: 40px;
-    margin: 5% auto;
-    padding: 5px 10px;
-    display: block;
-    background-color: #7D55C7;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.derecha h2 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.derecha p{
-    line-height: 1.7;
-
-}
-
-@media only screen and (max-width: 768px) {
-    .cuerpo {
-        flex-direction: column;
-    }
-
-    .izquierda,
-    .derecha {
-        width: 100%;
-        margin: 20px auto;
-    }
-
-    .izquierda {
-        padding: 20px;
-    }
-
-    .derecha {
-        padding: 20px;
-    }
-}
-
-
-
-
-
-/*Servicios*/
-.servicios{
-    display: flex;
-    flex-wrap: wrap; /* Para permitir que los elementos se ajusten en filas */
-    justify-content: center; /* Para centrar los elementos horizontalmente */
-    padding: 20px;
-}
-
-.titulo-servicio {
-    width: 100%;
-    font-size: 40px;
-    text-align: left; /* Para centrar el título */
-    color: #64449F;
-    margin-left: 15%;
-    margin-bottom: 20px; /* Espacio entre el título y los servicios */
-}
-
-.servicio{    
-    max-width: 500px;
-    display: flex;
-    margin: 20px;
-    margin-left: 150px;
-    border: 2px solid #AE95DC; 
-    border-radius: 10px;  
-}
-
-.servicio .image {
-    width: 50%;
-    margin:  25px ;
-}
-
-.servicio .image img{
-    width: auto;
-    height: auto;  
-}
-
-.servicio .content {
-    width: 50%;
-    padding: 10px;
-    background-color: white;
+form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-  
-.servicio .content img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 10px;
+    gap: 20px;
 }
 
-.servicio .content h3 {
-    color: #7D55C7;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 10px 0 10px 0;
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.servicio .content p {
-    font-size: 14px;
-    margin: 10px 0 30px 0;
-}
-
-.servicio .content button{
-    padding: 5px 10px;
-    width: 90%;
-    height: 17%;
-    background-color: #7D55C7;
-    color: #fff;
+.campo input {
+    padding: 12px;
+    border-radius: 15px;
     border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 14px;
-
+    background-color: #E5DDF3;
+    color: black;
 }
 
-@media screen and (max-width: 768px) {
-    .servicios {
-        padding: 10px;
-    }
-
-    .servicio {
-        width: calc(100% - 20px);
-        margin-left: 0px;
-    }
+/* Estilos para el select */
+.campo select {
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    background-color: #E5DDF3;
+    color: black;
+    width: 100%;
+    -webkit-appearance: none; /* Para eliminar la apariencia predeterminada del desplegable en navegadores webkit */
+    -moz-appearance: none; /* Para eliminar la apariencia predeterminada del desplegable en navegadores Firefox */
+    appearance: none; /* Para eliminar la apariencia predeterminada del desplegable en navegadores que siguen el estándar */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg>'); /* Agrega un ícono de flecha personalizado */
+    background-repeat: no-repeat;
+    background-position: right 12px center;
 }
+
+/* Estilos para el botón desplegable */
+.campo select::-ms-expand {
+    display: none; /* Oculta la flecha de desplegar en navegadores IE */
+}
+
+/* Estilos cuando el select está enfocado */
+.campo select:focus {
+    outline: none;
+    border-color: #7D55C7; /* Cambia el color del borde al enfocar el select */
+}
+
+/* Estilos para las opciones dentro del combobox */
+.campo select option {
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+
+.submit input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 220px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #7D55C7;
+}
+
+
+/*DERECHA*/
+.derecha {
+    width: 50%;
+    margin: 25px auto 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+ .derecha img{
+    width: 100%;
+    height: auto;
+ }
+
+
 

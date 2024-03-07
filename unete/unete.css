@@ -6,6 +6,7 @@
 }
 
 .unete h2 {
+    font-family: "Sansita";
     font-size: 22px;
     text-align: left; /* Para centrar el título */
     color: #64449F;
@@ -98,6 +99,7 @@
 }
 
 .titulo {
+    font-family: "Sansita";
     width: 100%;
     font-size: 40px;
     text-align: left; /* Para centrar el título */
@@ -153,6 +155,7 @@ REQUISITOS
 }
 
 .titulo-requisitos {
+    font-family: "Sansita";
     width: 100%;
     font-size: 40px;
     text-align: center; /* Para centrar el título */
@@ -200,6 +203,7 @@ REQUISITOS
 }
 
 .beneficios #izquierda h1{
+    font-family: "Sansita";
     color: #64449F;
     font-size: 25px;
     font-weight: bold;

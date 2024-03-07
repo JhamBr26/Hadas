@@ -14,6 +14,7 @@ body{
 }
 
 .servicio-banner h1{
+    font-family: "Sansita";
     font-size: 40px; /* Para centrar el título */
     color: #64449F;
     padding-top: 70px;
@@ -53,6 +54,7 @@ body{
 }
 
 .izquierda h1 {
+    font-family: "Sansita";
     font-size: 3rem;
     font-weight: bold;
     color: #64449F;
@@ -60,6 +62,7 @@ body{
 }
 
 .izquierda h2 {
+    font-family: "Sansita";
     font-size: 1.5rem;
     font-weight: bold;
     color: #64449F;
@@ -89,6 +92,7 @@ body{
 }
 
 .derecha h3 {
+    font-family: "Sansita";
     color: #64449F;
     font-size: 1.3125rem;
     font-weight: 700;
@@ -97,9 +101,10 @@ body{
 }
 
 .derecha .precio {
+    font-family: "Sansita";
     text-align: center;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 500;
     display: block;
     margin-bottom: 20px;
 }
@@ -120,6 +125,7 @@ body{
 }
 
 .derecha h2 {
+    font-family: "Sansita";
     font-size: 1.25rem;
     font-weight: bold;
     text-align: left;
@@ -164,6 +170,7 @@ body{
 }
 
 .titulo-servicio {
+    font-family: "Sansita";
     width: 100%;
     font-size: 40px;
     text-align: left; /* Para centrar el título */
@@ -207,6 +214,7 @@ body{
 }
 
 .servicio .content h3 {
+    font-family: "Sansita";
     color: #7D55C7;
     font-weight: bold;
     font-size: 18px;

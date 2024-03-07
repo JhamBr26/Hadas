@@ -49,9 +49,10 @@ body{
 }
 
 .valor h2 {
+    font-family: "Sansita";
     font-size: 20px;
     color: #64449F;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -69,7 +70,9 @@ body{
     padding: 20px;
 }
 
-.titulo-servicio {
+.titulo-servicio {    
+    font-family: "Sansita";
+    font-weight: 500;
     width: 100%;
     font-size: 40px;
     text-align: center; /* Para centrar el título */
@@ -112,8 +115,9 @@ body{
 }
 
 .servicio .content h3 {
+    font-family: "Sansita";
     color: #7D55C7;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 18px;
     margin: 10px 0 10px 0;
 }
@@ -172,7 +176,7 @@ body{
     font-size: 40px;
     font-family: 'Sansita';
     color: #64449F;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 

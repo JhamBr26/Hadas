@@ -33,9 +33,10 @@ body{
 }
 
 .contenido h1{
+    font-family: "Sansita";
     margin: 0 0 30px 0;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 700;
     color: #64449F;
 }
 
@@ -92,6 +93,7 @@ body{
 }
 
 .porque #izquierda h1{
+    font-family: "Sansita";
     color: #64449F;
     font-size: 25px;
     font-weight: bold;
