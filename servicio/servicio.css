@@ -24,81 +24,83 @@
 }
 
 
-/*CUERPO*/
-.cuerpo{
-    width: 80%;
+/* CUERPO */
+.cuerpo {
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
-
-    /*IZQUIERDA*/
-.izquierda{
-    width: 80%;
-    margin: 0 auto;
-    padding: 30px 257px;
+/* IZQUIERDA */
+.izquierda {
+    width: 70%;
+    margin: 0 50px 0 50px;
+    padding: 30px;
     box-sizing: border-box;
-    border: 2px solid white; 
-    border-radius: 10px;  
+    border: 2px solid #fff;
+    border-radius: 10px;
 }
 
-.izquierda img{
+.izquierda img {
     width: 100%;
+    height: auto;
 }
 
-
-.izquierda h1{
-    font-size: 45px;
+.izquierda h1 {
+    font-size: 3rem;
     font-weight: bold;
     color: #64449F;
     margin: 20px auto;
-
 }
 
-.izquierda h2{
-    font-size: 22px;
+.izquierda h2 {
+    font-size: 1.5rem;
     font-weight: bold;
     color: #64449F;
     margin: 20px auto;
-
 }
 
-.izquierda li{
+.izquierda p,
+.izquierda ul {
+    font-size: 1rem;
+    color: #333;
+}
+
+.izquierda li {
     margin-left: 35px;
     list-style-type: disc;
 }
 
-    /*DERECHA*/
-.derecha{
-    width: 20%;
+/* DERECHA */
+.derecha {
+    width: 30%;
     margin: 25px auto 0 auto;
     background-color: #F3CB6C35;
     padding: 30px;
     box-sizing: border-box;
-    border: 2px solid white; 
-    border-radius: 10px;  
+    border: 2px solid #fff;
+    border-radius: 10px;
 }
 
-
-.derecha h3{
+.derecha h3 {
     color: #64449F;
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 700;
     text-align: left;
     margin-bottom: 10px;
-
 }
 
-.derecha .precio{
+.derecha .precio {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     display: block;
     margin-bottom: 20px;
 }
 
-.derecha button{
+.derecha button {
     width: 100%;
     height: 40px;
     margin: 5% auto;
@@ -111,16 +113,40 @@
     font-weight: 600;
     cursor: pointer;
     font-size: 14px;
-
 }
 
-.derecha h2{ 
-    font-size: 20px;
+.derecha h2 {
+    font-size: 1.25rem;
     font-weight: bold;
     text-align: left;
     margin-bottom: 10px;
+}
+
+.derecha p{
+    line-height: 1.7;
 
 }
+
+@media only screen and (max-width: 768px) {
+    .cuerpo {
+        flex-direction: column;
+    }
+
+    .izquierda,
+    .derecha {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .izquierda {
+        padding: 20px;
+    }
+
+    .derecha {
+        padding: 20px;
+    }
+}
+
 
 
 

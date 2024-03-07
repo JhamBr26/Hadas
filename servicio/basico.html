@@ -27,7 +27,7 @@
                     <li><a href="../unete/unete.html">Quiero ser un Hada</a></li> 
                 </ul>              
             </nav>
-            <button class="iniciar-sesion" type="submit">INICIAR SESIÓN</button>
+            <button id="loginButton" class="iniciar-sesion" type="submit">INICIAR SESIÓN</button>
         </div>
     </header>    
 
@@ -83,23 +83,26 @@
             </div>
 
             <div class="derecha">
-                <p>Poca cantidad de áreas, departamento pequeño donde realizan limpieza 1 vez a la semana.</p>
-                <br>
-                <h3>Total</h3>
-                <p class="precio">S/ 89.00</p>
-                <button type="submit">RESERVAR</button>
-                <br>
-                <h2>Sobre horas adicionales:</h2>
-                <p>Si el tiempo contratado no fue suficiente para culminar con la limpieza, puede comunicarse 
-                    a la central WhatsApp 998400706 para realizar la consulta y ver la disponibilidad si se puede 
-                    ampliar las horas a contratar. Se recomienda realizar esta ampliación al iniciar el servicio y 
-                    no al finalizar. Las horas adicionales dependen de la aprobación de la hadita no de HADAS. Todas 
-                    las haditas son personal independiente que cuentan con otros trabajos y responsabilidades fuera del horario contratado por el cliente.</p>
-                <br>
-                <h2>Servicios complementarios a la limpieza:</h2>
-                <p>Se encuentran activos los servicios de cocina, lavado y planchado; para recibir más información
-                     comunicarse al WhatsApp 998400706</p>
-            </div>
+                    <p>Poca cantidad de áreas, departamento pequeño donde realizan limpieza 1 vez a la semana.</p>
+                    <br>
+                    <h3>Total</h3>
+                    <p class="precio">S/ 89.00</p>
+                    <button type="submit" onclick="location.href='/reserva/reserva1.html'">RESERVAR</button>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Sobre horas adicionales:</h2>
+                    <p>Si el tiempo contratado no fue suficiente para culminar con la limpieza, puede comunicarse 
+                        a la central WhatsApp 998400706 para realizar la consulta y ver la disponibilidad si se puede 
+                        ampliar las horas a contratar. Se recomienda realizar esta ampliación al iniciar el servicio y 
+                        no al finalizar. Las horas adicionales dependen de la aprobación de la hadita no de HADAS. Todas 
+                        las haditas son personal independiente que cuentan con otros trabajos y responsabilidades fuera del horario contratado por el cliente.</p>
+                    <br>
+                    <br>
+                    <h2>Servicios complementarios a la limpieza:</h2>
+                    <p>Se encuentran activos los servicios de cocina, lavado y planchado; para recibir más información
+                         comunicarse al WhatsApp 998400706</p>
+                </div>
         </div>
 
         <section class="servicios">
@@ -115,7 +118,7 @@
                     <img src="../imagenes/reloj.svg" alt="">  
                     <h3>6 horas</h3>
                     <p>El más popular por los clientes.</p> 
-                    <button type="submit">MÁS INFORMACIÓN</button>
+                    <button type="submit" onclick="location.href='/servicio/intermedio.html'">MÁS INFORMACIÓN</button>
                 </div>  
             </div>
 
@@ -127,7 +130,7 @@
                     <img src="../imagenes/reloj.svg" alt="">  
                     <h3>7 horas</h3>
                     <p>Para los amantes de la limpieza.</p> 
-                    <button type="submit">MÁS INFORMACIÓN</button>
+                    <button type="submit" onclick="location.href='/servicio/avanzado.html'">MÁS INFORMACIÓN</button>
                 </div> 
             </div>
         </section>
@@ -146,13 +149,12 @@
                 <h2>Contacto</h2>
                 <h3>ATENCION AL CLIENTE</h3>
                 <P>Lunes a Viernes: 9:00am - 06:00pm</P>
-                <p>Sábados: 9:00am - 12:00pm</p>
-                <p class="link-contacto"><a href=""><img src="../imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
-                <p class="link-contacto"><a href=""><img src="../imagenes/correo.svg" alt="correo"> reservas@hadas.pe</a></p>                
+                <p class="link-contacto"><a href="https://api.whatsapp.com/send?phone=51998400706&text=&source=&data=&app_absent=" target="_blank"><img src="imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
+                <p class="link-contacto"><a href="mailto:reservas@hadas.pe"><img src="imagenes/correo.svg" alt="correo"> reservas@hadas.pe</a></p>                
                 <h3>QUIERO SER UN HADA</h3>
                 <P>Lunes a Viernes: 8:00am - 05:00pm</P>
                 <p>Sábados: 8:00am - 12:00pm</p>
-                <p class="link-contacto"><a href=""><img src="../imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
+                <p class="link-contacto"><a href="https://api.whatsapp.com/send?phone=51955467282&text=&source=&data=&app_absent=" target="_blank"><img src="imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
             </div>
             
             <div class="contacto">
@@ -170,5 +172,7 @@
             <p> Hadas 2024 - Todos los derechos reservados</p>
         </section>
     </footer>
+    
+    <script src="../login.js"></script> 
 </body>
 </html>

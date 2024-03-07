@@ -26,7 +26,7 @@
                     <li><a href="../unete/unete.html">Quiero ser un Hada</a></li> 
                 </ul>              
             </nav>
-            <button class="iniciar-sesion" type="submit">INICIAR SESIÓN</button>
+            <button id="loginButton" class="iniciar-sesion" type="submit">INICIAR SESIÓN</button>
         </div>
     </header>
 
@@ -40,7 +40,7 @@
             <p>Trabaja desde 5 horas al día en limpieza de casas y departamentos. 
                 Para postular,</p>
             <p>recuerda tener todos tus papeles a la mano. ¡Únete a Hadas!</p>
-            <button type="submit">POSTULA AHORA</button>                
+            <button type="button" onclick="window.open('https://api.whatsapp.com/send?phone=51955467282&amp;text=Hola%20%E2%9C%A8%20Estoy%20interesada%20en%20trabajar%20con%20Hadas%20tengo%20disponibilidad%20de%205%20horas%20todos%20los%20dias%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20%F0%9F%A4%97%20%0AMuchas%20gracias.', '_blank')">POSTULA AHORA</button>
         </section>
 
         <section class="expertos">
@@ -135,7 +135,7 @@
             </div>
 
             <div class="enviar">
-                <button type="submit"> POSTULA AHORA</button>    
+                <button type="button" onclick="window.open('https://api.whatsapp.com/send?phone=51955467282&amp;text=Hola%20%E2%9C%A8%20Estoy%20interesada%20en%20trabajar%20con%20Hadas%20tengo%20disponibilidad%20de%205%20horas%20todos%20los%20dias%20y%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20%F0%9F%A4%97%20%0AMuchas%20gracias.', '_blank')">POSTULA AHORA</button>
             </div>       
         </section>
 
@@ -169,13 +169,12 @@
                 <h2>Contacto</h2>
                 <h3>ATENCION AL CLIENTE</h3>
                 <P>Lunes a Viernes: 9:00am - 06:00pm</P>
-                <p>Sábados: 9:00am - 12:00pm</p>
-                <p class="link-contacto"><a href=""><img src="../imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
-                <p class="link-contacto"><a href=""><img src="../imagenes/correo.svg" alt="correo"> reservas@hadas.pe</a></p>                
+                <p class="link-contacto"><a href="https://api.whatsapp.com/send?phone=51998400706&text=&source=&data=&app_absent=" target="_blank"><img src="imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
+                <p class="link-contacto"><a href="mailto:reservas@hadas.pe"><img src="imagenes/correo.svg" alt="correo"> reservas@hadas.pe</a></p>                
                 <h3>QUIERO SER UN HADA</h3>
                 <P>Lunes a Viernes: 8:00am - 05:00pm</P>
                 <p>Sábados: 8:00am - 12:00pm</p>
-                <p class="link-contacto"><a href=""><img src="../imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
+                <p class="link-contacto"><a href="https://api.whatsapp.com/send?phone=51955467282&text=&source=&data=&app_absent=" target="_blank"><img src="imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
             </div>
             
             <div class="contacto">
@@ -193,5 +192,7 @@
             <p> Hadas 2024 - Todos los derechos reservados</p>
         </section>
     </footer>
+    
+    <script src="../login.js"></script> 
 </body>
 </html>
