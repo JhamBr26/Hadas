@@ -1,12 +1,19 @@
-/*   FOOTER    */
-.contactos{
-    height: 350px;
-    background-color: #F6D891;
+/* FOOTER */
+footer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
 }
 
-.contacto{
+.contactos {
+    flex: 1; /* Ocupa todo el espacio disponible en la columna */
+    background-color: #F6D891;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente en dispositivos móviles */
+    justify-content: space-around;
+    align-items: flex-start; /* Alinea los elementos al principio de la columna */
+}
+
+.contacto {
     width: 30%;
     margin: 20px;
 }
@@ -16,33 +23,70 @@
     height: auto;
 }
 
-.contacto h2{
+.contacto h2 {
     font-size: 26px;
     font-weight: bold;
     margin: 10px 0 0 0;
 }
 
-.contacto h3{
+.contacto h3 {
     font-size: 14px;
     font-weight: bold;
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
 }
 
-.contacto .link{
+.contacto .link {
     margin: 20px 0;
 }
 
-.contacto a{
+.contacto a {
     text-decoration: none;
 }
 
-.derechos{
+.derechos {
     background-color: #31214F;
     height: 50px;
     display: flex;
+    align-items: center; /* Alinea los elementos verticalmente en la sección de derechos */
 }
 
-.derechos p{
+.derechos p {
     color: white;
     margin: auto;
+}
+
+.contacto form input {
+    height: 25px;
+    width: 60%;
+    background-color: #E5DDF3;
+    border: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.contacto form button {
+    height: 27px;
+    width: 25%;
+    color: white;
+    font-weight: bold;
+    background-color: #7D55C7;
+    border: none;
+    border-radius: 25px;
+    margin: 20px 0 20px -20px;
+}
+
+.contacto .link-contacto{
+     margin: 10px 0;
+}
+.contacto p a img{
+    width: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .contacto form button {
+        width: 40%;
+    }
 }
