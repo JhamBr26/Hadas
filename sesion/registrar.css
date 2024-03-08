@@ -2,6 +2,7 @@ body{
     font-family:  'Mulish';
 }
 
+/*
 .head {
     background-image: url(./Mask_group.svg);
     height: 207px;
@@ -15,11 +16,6 @@ body{
     padding-left: 100px;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .container {
     display: flex;
@@ -112,3 +108,4 @@ form {
     color: white;
     background-color: #7D55C7;
 }
+*/

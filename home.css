@@ -167,54 +167,56 @@ body{
 
 }
 
-.comentarios{
-    height: 300px;
-    text-align: center;
-}
-
-.comentarios h2{
-    font-size: 40px;
-    font-family: 'Sansita';
-    color: #64449F;
-    font-weight: 500;
-}
-
-
-.carousel-container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-.carousel {
+/*Expertos*/
+.comentarios {
     display: flex;
+    flex-wrap: wrap; /* Para permitir que los elementos se ajusten en filas */
+    justify-content: center; /* Para centrar los elementos horizontalmente */
+    padding: 20px;
 }
 
-.slide {
-    flex: 0 0 100%;
-}
-
-.slide img {
+.titulo {
+    font-family: "Sansita";
     width: 100%;
-    height: auto;
-    display: block;
+    font-size: 40px;
+    text-align: left; /* Para centrar el título */
+    color: #64449F;
+    margin-left: 15%;
+    margin-bottom: 20px; /* Espacio entre el título y los servicios */
 }
 
-@keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+.comentario {
+    width: calc(66% - 20px); /* Calcula el ancho considerando el margen */
+    max-width: 200px; /* Establece un ancho máximo para evitar que los elementos sean demasiado grandes en pantallas grandes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 90px;
+    margin: 30px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #E5DDF3; 
+    border-radius: 10px;  
 }
 
-.carousel {
-animation: slide 20s infinite;
+.comentario img {
+    margin-bottom: 15px;
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+}
+
+
+.comentario p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.comentario h2{
+    font-weight: bold;
 }
   
 .img-redes{
     width: 100%;
     aspect-ratio: 144/37;
 }
-
-
-
-
 
