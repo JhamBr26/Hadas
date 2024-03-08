@@ -1,19 +1,18 @@
-body{
-    font-family:  'Mulish';
+body {
+    font-family: 'Mulish';
 }
+
 /* FOOTER */
 footer {
     display: flex;
-    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    flex-direction: column;
 }
 
 .contactos {
-    flex: 1; /* Ocupa todo el espacio disponible en la columna */
     background-color: #F6D891;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente en dispositivos móviles */
     justify-content: space-around;
-    align-items: flex-start; /* Alinea los elementos al principio de la columna */
+    align-items: flex-start;
 }
 
 .contacto {
@@ -51,7 +50,7 @@ footer {
     background-color: #31214F;
     height: 50px;
     display: flex;
-    align-items: center; /* Alinea los elementos verticalmente en la sección de derechos */
+    align-items: center;
 }
 
 .derechos p {
@@ -67,7 +66,7 @@ footer {
     border-radius: 25px;
     box-sizing: border-box;
     padding: 15px;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
 }
 
 .contacto form button {
@@ -78,19 +77,51 @@ footer {
     background-color: #7D55C7;
     border: none;
     border-radius: 25px;
-    margin: 20px 0 20px -20px;
+    margin: 0 0 20px 0;
 }
 
-.contacto .link-contacto{
-     margin: 10px 0;
+.contacto .link-contacto {
+    margin: 10px 0;
 }
-.contacto p a img{
+
+.contacto p a img {
     width: auto;
     height: auto;
 }
 
+
 @media screen and (max-width: 768px) {
+    .contactos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto {
+        width: 80%;
+        margin: 20px 0;
+    }
+
     .contacto form button {
         width: 40%;
+    }
+}
+
+
+@media screen and (max-width:430px){
+    .contacto form input {
+        height: 40px;
+        width: 90%;
+        margin-bottom: 3px;
+    }
+
+    form{
+        gap: 5px !important;
+    }
+
+    .contacto form button {
+        width: 60%;
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 0px ;
     }
 }
