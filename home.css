@@ -64,10 +64,13 @@ body{
 
 /*Servicios*/
 .servicios{
+    width: 80%;
     display: flex;
+    margin: 0 auto;
+    align-items: center;
     flex-wrap: wrap; /* Para permitir que los elementos se ajusten en filas */
     justify-content: center; /* Para centrar los elementos horizontalmente */
-    padding: 20px;
+    
 }
 
 .titulo-servicio {    
@@ -83,8 +86,8 @@ body{
 .servicio{    
     max-width: 500px;
     display: flex;
-    margin: 20px;
-    margin-left: 150px;
+    align-items: center;
+    margin: 20px 50px;
     border: 2px solid #AE95DC; 
     border-radius: 10px;  
 }
@@ -140,23 +143,40 @@ body{
 
 }
 
-@media screen and (max-width: 768px) {
+/* Estilos responsive */
+@media only screen and (max-width: 1200px) {
     .servicios {
-        padding: 10px;
-    }
-
-    .servicio {
-        width: calc(100% - 20px);
-        margin-left: 0px;
-    }
-
-    .servicio .content button{
-        width: 100%;
+        width: 90%;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .servicio {
+        width: 80%;
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+    .servicio {
+        width: 110%;
+        margin: 20px auto;
+    }
+}
+
+/*DESCUENTO*/
+.descuento{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .img-descuento{
-    width: 100%;
+    width: 60%;
+    align-items: left;
 }
 
 .aliados{
