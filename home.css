@@ -149,6 +149,10 @@ body{
         width: calc(100% - 20px);
         margin-left: 0px;
     }
+
+    .servicio .content button{
+        width: 100%;
+    }
 }
 
 .img-descuento{
