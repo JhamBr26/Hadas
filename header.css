@@ -1,6 +1,7 @@
-body{
-    font-family:  'Mulish';
+body {
+    font-family: 'Mulish';
 }
+
 /* HEADER */
 header {
     background-color: #F1E6B2;
@@ -8,7 +9,7 @@ header {
 }
 
 .container {
-    width: 90%; /* Se ajusta al 90% del ancho del viewport */
+    width: 80%; /* Cambio al 80% del ancho del viewport */
     max-width: 1250px; /* Limita el ancho máximo a 1250px */
     height: auto; /* Se ajusta automáticamente a la altura del contenido */
     margin: 0 auto; /* Centra horizontalmente */
@@ -17,9 +18,13 @@ header {
     align-items: center; /* Centra verticalmente */
 }
 
+h1 {
+    margin: 0; /* Elimina el margen del título */
+}
+
 nav {
     flex: 1; /* Toma el espacio restante */
-    text-align: right; /* Alinea el texto a la derecha */
+    text-align: center; /* Alinea el texto al centro */
 }
 
 nav ul {
@@ -27,11 +32,7 @@ nav ul {
     padding: 0;
     list-style: none; /* Quita los estilos de la lista */
     display: flex; /* Usa el modelo de caja flexible */
-    justify-content: center; /* Centra horizontalmente */
-}
-
-nav li {
-    margin-left: 45px; /* Añade margen entre los elementos */
+    justify-content: space-around; /* Distribuye los elementos de forma equitativa */
 }
 
 nav a {
@@ -43,7 +44,6 @@ nav a {
 .menu-icon {
     display: none; /* Oculta el ícono del menú en pantallas grandes */
     cursor: pointer;
-    align-items: center;
 }
 
 .menu-icon span {
@@ -79,25 +79,54 @@ nav a {
     border-radius: 25px;
 }
 
-@media (max-width: 800px) {
+
+/* CSS para iPhone 14 y dispositivos móviles similares */
+@media (max-width: 950px) {
+    .container {
+        flex-wrap: wrap; /* Envuelve los elementos en pantallas pequeñas */
+    }
+
+    h1 {
+        flex-basis: 50%; /* El título ocupará toda la anchura en pantallas pequeñas */
+        text-align: left; /* Alinea el texto al centro */
+        margin-bottom: 20px; /* Añade margen inferior para separar el título del menú */
+    }
+
+    nav {
+        flex-basis: 100%; /* El menú ocupará toda la anchura en pantallas pequeñas */
+        order: 3; /* Mueve el menú al final */
+        text-align: center; /* Alinea el menú al centro */
+        margin-bottom: 20px; /* Añade margen inferior */
+        display: none; /* Oculta la navegación por defecto */
+    }
+
+    #loginButton {
+        order: 1; /* Mueve el botón de inicio de sesión al principio */
+        margin-bottom: 20px; /* Añade margen inferior */
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el ícono del menú en pantallas pequeñas */
+        order: 2; /* Coloca la hamburguesa después del botón de inicio de sesión */
+        margin: 0 auto; /* Centra la hamburguesa horizontalmente */
+        margin-bottom: 10px; /* Añade margen inferior */
+        cursor: pointer; /* Cambia el cursor al pasar sobre la hamburguesa */
+        text-align: right;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: block; /* Muestra la navegación cuando el checkbox está marcado */
+    }
+
     nav ul {
-        display: none; /* Oculta la lista de navegación en pantallas pequeñas */
-        flex-direction: column; /* Cambia la dirección de los elementos a columna */
-        align-items: center; /* Centra verticalmente los elementos */
+        display: block; /* Cambia a bloque */
     }
 
     nav li {
         margin: 10px 0; /* Añade margen verticalmente entre los elementos */
     }
 
-    .menu-icon {
-        display: block; /* Muestra el ícono del menú en pantallas pequeñas */
-        margin-top: 15px;
-        margin-left: 5px;
-
-    }
-
-    #menu-toggle:checked ~ nav ul {
-        display: flex; /* Muestra la lista de navegación cuando el checkbox está marcado */
+    .iniciar-sesion {
+        display: none; /* Oculta el botón de inicio de sesión en pantallas pequeñas */
     }
 }
