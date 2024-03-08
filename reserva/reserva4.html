@@ -100,18 +100,26 @@
                     <div class="fila">
                         <div class="campo">
                             <label for="Referencia">Fecha vencimiento:</label>
-                            <input type="tel" id="Referencia" name="Referencia" placeholder="MM/AAAA" required>
+                            <input id="fv" type="tel" id="Referencia" name="Referencia" placeholder="MM/AAAA" required>
                         </div>
                         <br>
                         <div class="campo">
                             <label for="CVV">CVV:</label>
-                            <input type="tel" id="CVV" name="CVV" value="000" placeholder="999999999" required>
+                            <input id="cvv" type="tel" id="CVV" name="CVV" value="000" placeholder="999999999" required>
                         </div>
                     </div>
                     <div class="submit">
-                        <input  id="reservaBoton" type="submit"  value="PAGAR S/ 89.00">
-                    </div>                    
-                    <script src="../reserva.js"></script> 
+                        <input  id="reservaBoton" onclick="openModal()" type="button"  value="PAGAR S/ 89.00">
+                    </div>
+                        
+                    
+                    <dialog class="modal" id="mainModal">
+                        <h1>¡Reserva exitosa!</h1>
+                        <p>Se ha enviado los detalles de su reserva a la dirección de correo electrónico ingresada.</p>
+                        <button onclick="location.href='../index.html'"  class="btn-aceptar" >ACEPTAR</button>
+                    </dialog>
+
+                    <script src="/reserva/reservaExitosa.js"></script> 
                 </form>
             </div>
         </div>    

@@ -185,3 +185,73 @@ form {
         width: 100%;
     }
 }
+
+@media (max-width: 456px) {
+    .fila{
+        gap: 5px;
+    }
+
+    .servicio-banner h1 {
+        width: 350px;
+    }
+    
+    .campo #fv {
+        width: 156px;
+    }
+
+    .campo #cvv {
+        width: 156px;
+    }
+    .cuerpo2 .izquierda { 
+        width: 90%;
+        margin-left: 22px;
+    }
+
+    #mainModal{
+        margin: 50% auto !important;
+    }
+
+}
+   
+
+
+.modal::backdrop{
+    background-color: #00000050;
+}
+
+#mainModal{
+    font-family: 'Mulish';
+    width: 350px;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ /* Título */
+ #mainModal h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #7D55C7;
+  }
+  
+  /* Párrafo */
+  #mainModal  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Botón */
+  #mainModal .btn-aceptar {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #7D55C7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
