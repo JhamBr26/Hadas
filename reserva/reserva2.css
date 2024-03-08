@@ -3,6 +3,24 @@ body {
     font-family: 'Mulish';
 }
 
+/* Estilo cuando se pasa el cursor sobre el plan */
+.plan:hover,
+.hour:hover {
+    background-color: #E5DDF3; /* Cambiar el color de fondo al pasar el cursor */
+}
+
+/* Estilo cuando se hace clic en el plan */
+.plan:active,
+.hour:active {
+    background-color: #E5DDF3; /* Cambiar el color de fondo cuando se hace clic */
+}
+
+.plan.clicked,
+.hour.clicked {
+    background-color: #E5DDF3; /* Cambiar el color de fondo al pasar el cursor o hacer clic */
+}
+
+/* Resto de tu CSS... */
 .servicio-banner {
     width: 100%;
 }

@@ -53,7 +53,7 @@
         </div>
 
         <section class="planes">
-            <div class="plan"> 
+            <div class="plan clickable"> 
                 <h3>Suscripción Ahorra 10%</h3>
                 <ul>
                     <li>Contratalo cuando quieras</li>
@@ -63,7 +63,7 @@
                 </ul>
             </div>
 
-            <div class="plan">
+            <div class="plan clickable">
                 <h3>Suscripción Única</h3>
                 <ul>
                     <li>Reserva un solo servicio el día que necesites</li>
@@ -76,15 +76,15 @@
         </div>
 
         <section class="horas">
-            <div class="hour">
+            <div class="hour clickable">
                 <p>5 horas</p>
                 <p class="precio">S/ 89.00</p>
             </div>
-            <div class="hour">
+            <div class="hour clickable">
                 <p>6 horas</p>
                 <p class="precio">S/ 99.00</p>
-            </div>
-            <div class="hour">
+            </div> 
+            <div class="hour clickable">
                 <p>7 horas</p>
                 <p class="precio">S/ 114.00</p>
             </div>
@@ -132,6 +132,20 @@
             <p> Hadas 2024 - Todos los derechos reservados</p>
         </section>
     </footer>
+
+    <script >
+        // Selecciona todos los elementos con la clase "clickable"
+        const clickableElements = document.querySelectorAll('.clickable');
+
+        // Itera sobre cada elemento
+        clickableElements.forEach(element => {
+            // Agrega un evento "click"
+            element.addEventListener('click', () => {
+                // Toggle entre agregar y quitar la clase "clicked"
+                element.classList.toggle('clicked');
+            });
+        });
+    </script>
     
     <script src="../login.js"></script> 
 </body>
