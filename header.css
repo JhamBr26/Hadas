@@ -108,7 +108,7 @@ nav a {
     .menu-icon {
         display: block; /* Muestra el ícono del menú en pantallas pequeñas */
         order: 2; /* Coloca la hamburguesa después del botón de inicio de sesión */
-        margin: 0 auto; /* Centra la hamburguesa horizontalmente */
+        margin: 0 0; /* Centra la hamburguesa horizontalmente */
         margin-bottom: 10px; /* Añade margen inferior */
         cursor: pointer; /* Cambia el cursor al pasar sobre la hamburguesa */
         text-align: right;
