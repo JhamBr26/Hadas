@@ -167,22 +167,86 @@ body{
 
 /*DESCUENTO*/
 .descuento{
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Para permitir que los elementos se ajusten en filas */
+    justify-content: center; 
+    margin: 0;
+    display: flex;
 }
-
-.img-descuento{
+.descuento .izquierda{
     width: 60%;
-    align-items: left;
 }
 
+.descuento .izquierda img{
+    width: 100%;
+}
+
+.descuento .derecha{
+    width: 40%;
+    padding: 5vw 5vw;;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.descuento .derecha #a{
+    font-size: 40px;
+    font-family: "Sansita";
+    color: #64449F;
+}
+
+.descuento .derecha #b{
+    font-size: 60px;
+    font-family: "Sansita";
+    color: #64449F;
+}
+ 
+
+.descuento .derecha h2{
+    font-size: 26px;
+    font-family: "Sansita";
+    color: #64449F;
+    margin-bottom: 35px;
+}
+
+.derecha li{    
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.derecha p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .descuento {
+        flex-direction: column; /* Cambia el flujo a vertical en dispositivos móviles */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+    .descuento .izquierda,
+    .descuento .derecha {
+        width: 100%; /* Establece el ancho al 100% en dispositivos móviles */
+        text-align: left; /* Centra horizontalmente */
+        
+    }
+
+    .descuento .derecha img {
+        max-width: 80%; /* Establece un ancho máximo para la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 20px auto ;
+    }
+}
+
+
+/*  ALIADOS */
 .aliados{
     background-color: #E5DDF3;
     text-align: center;
-
 }
 
 .img-aliados{
