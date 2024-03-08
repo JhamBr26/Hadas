@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="reserva1.css">
+</head>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html"><h1><img src="../imagenes/logo2.svg" alt="Logo de hadas"></h1></a>  
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../nosotros/nosotros.html">Nosotros</a></li>
+                    <li><a href="../servicio/basico.html">Servicios</a></li>
+                    <li><a href="../unete/unete.html">Quiero ser un Hada</a></li> 
+                </ul>              
+            </nav>
+            <button id="loginButton" class="iniciar-sesion" type="submit">INICIAR SESIÓN</button>
+        </div>
+    </header>    
+
+    <main>
+        <div class="servicio-banner">
+            <div>
+                <h1>Proceso de reserva</h1>
+                <p>Listos para ayudarte</p>
+            </div>
+        </div>
+
+        <section class="linea">
+                <img src="../imagenes/proceso3.svg" alt="">
+        </section>
+
+        <div class="cuerpo">
+                <div class="izquierda">
+                <h2>Elige el día y la horar</h2>    
+                <br>            
+                <form  action="/reserva/reserva4.html">
+                    
+                    <div class="campo">
+                        <label for="Fecha">Fecha:</label>
+                        <input type="date" id="Fecha" name="Fecha" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="Hora">Hora:</label>
+                        <select id="Hora" name="Hora" required>
+                            <option value="opcion1">12:00 h</option>
+                            <option value="opcion1">13:00 h</option>
+                            <option value="opcion2">14:00 h</option>
+                            <option value="opcion3">15:00 h</option>
+                            <option value="opcion4">Otros</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="Referencia">Indicaciones para la Hadita:</label>
+                        <input type="text" id="Referencia" name="Referencia" placeholder="Escribe aquí" required>
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit"  value="SIGUIENTE">
+                    </div>
+                </form>
+            </div>
+
+            
+        </div>        
+    </main>
+
+    <footer>
+        <section class="contactos">
+            <div class="contacto">
+                <img src="../imagenes/logo2.svg" alt="logo_footer">
+                <p class="link"><a href="../nosotros/nosotros.html">Nosotros</a></p>
+                <p class="link"><a href="../servicio/basico.html">Servicios</a> </p>
+                <p class="link"><a href="../unete/unete.html">Quiero ser un Hada</a> </p>
+            </div>
+            
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <h3>ATENCION AL CLIENTE</h3>
+                <P>Lunes a Viernes: 9:00am - 06:00pm</P>
+                <p class="link-contacto"><a href="https://api.whatsapp.com/send?phone=51998400706&text=&source=&data=&app_absent=" target="_blank"><img src="../imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
+                <p class="link-contacto"><a href="mailto:reservas@hadas.pe"><img src="../imagenes/correo.svg" alt="correo"> reservas@hadas.pe</a></p>                
+                <h3>QUIERO SER UN HADA</h3>
+                <P>Lunes a Viernes: 8:00am - 05:00pm</P>
+                <p>Sábados: 8:00am - 12:00pm</p>
+                <p class="link-contacto"><a href="https://api.whatsapp.com/send?phone=51955467282&text=&source=&data=&app_absent=" target="_blank"><img src="../imagenes/whatsapp.svg" alt="whatsapp"> 998 400 706</a></p>
+            </div>
+            
+            <div class="contacto">
+                <h2>Suscríbete y obtén beneficios!</h2>
+                <form>
+                    <input placeholder="Correo" type="email" name="" id="">
+                    <button type="submit">Enviar</button>
+                </form>
+                <p class="link-contacto">Siguenos</p>
+                <img src="../imagenes/redes2.svg" alt="redes">
+            </div> 
+        </section>
+
+        <section class="derechos">
+            <p> Hadas 2024 - Todos los derechos reservados</p>
+        </section>
+    </footer>
+    
+    <script src="../login.js"></script> 
+</body>
+</html>

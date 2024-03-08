@@ -1,0 +1,143 @@
+/* CSS base */
+body {
+    font-family: 'Mulish';
+}
+
+.servicio-banner {
+    width: 100%;
+}
+
+.servicio-banner div {
+    margin-left: 15%;
+    text-align: left;
+}
+
+.servicio-banner h1 {
+    font-size: 40px;
+    color: #64449F;
+    padding-top: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.servicio-banner p {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.linea {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.linea img {
+    width: 40%;
+}
+
+.cuerpo {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.izquierda {
+    width: 50%;
+    margin: 0 50px 0 50px;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.izquierda h2 {
+    font-family: "Sansita";
+    font-size: 26px;
+    color: #64449F;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo input {
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    background-color: #E5DDF3;
+    color: black;
+}
+
+.campo select {
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    background-color: #E5DDF3;
+    color: black;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+.campo select::-ms-expand {
+    display: none;
+}
+
+.campo select:focus {
+    outline: none;
+    border-color: #7D55C7;
+}
+
+.campo select option {
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.submit input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 220px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #7D55C7;
+}
+
+
+
+/* Media queries para hacer el diseño responsive */
+@media only screen and (max-width: 768px) {
+    .cuerpo {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .izquierda{
+        width: 100%;
+        margin: 0;
+    }
+
+    .linea img {
+        width: 100%;
+    }
+}
